@@ -34,9 +34,9 @@ class Settings extends Model
      */
     public function initSettingsData()
     {
-        $this->paths = 'api/*';
+        $this->paths = 'api/* output/*';
         $this->allowedOrigins = '*';
-        $this->allowedHeaders = 'Content-Type X-Requested-With';
+        $this->allowedHeaders = 'Content-Type X-Requested-With Authorization';
         $this->allowedMethods = '*';
         $this->exposedHeaders = '';
         $this->maxAge = 0;
